@@ -16,5 +16,7 @@
 		  $$($$(".mason .col")[i%4]).append(this)
 		  i++;
 		});
+		
+		$$(".tmp").remove();
 	}
 })(Quo);
