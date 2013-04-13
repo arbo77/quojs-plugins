@@ -13,8 +13,11 @@ Changelog
 
 2013/04/13 
 - Change entire masonry class
-- adding init method into Masonry class
-- adding add_item method into Masonry class
-- adding draw_item method into Masonry class
-- adding masonry.append method into quo-masonry plugin
-- adding masonry.prepend method into quo-masonry plugin
+- Adding init method into Masonry class
+- Adding add_item method into Masonry class
+- Adding draw_item method into Masonry class
+- Adding masonry.append method into quo-masonry plugin
+- Adding masonry.prepend method into quo-masonry plugin
+
+2013/04/20
+- Change add_item method, place next item into the shortest column.
