@@ -1,13 +1,13 @@
-QuoJS-Plugins
-=============
+# QuoJS Masonry Plugins
 
-Experimental of QuoJS-plugins.
+Dynamic masonry layout design using QuoJS a Micro Javascript Library.
 
-First commit of this Git, contain quo-masonry plugin with no options and force
-4 columns. It's should be using an options next commit :) 
+## Dependencies
 
-Changelog
-=========
+- [QouJS](http://quojs.tapquo.com)
+
+## Changelog
+
 2013/04/12 
 - First commit
 
@@ -24,3 +24,52 @@ Changelog
 - Adding fluid placement
 - Adding inline css to define .mason and .mason .col classes
 - Redrawing capability when resizing window 
+
+## Coding example
+
+### Javascript
+
+```js
+<script src="quo.js"></script>
+<script src="quo.masonry.js"></script>
+<script>
+
+$$().ready(function(){
+	$$("#container").masonry({
+		cols:'auto', 
+		itemWidth: 240
+	});
+}
+
+</script>
+```
+
+### HTML
+
+```html
+
+<div id="container" class="cols">
+	<div class="box" style="height:320px">1</div>
+	<div class="box" style="height:400px">2</div>
+	<div class="box" style="height:280px">3</div>
+	<div class="box" style="height:420px">4</div>
+	<div class="box" style="height:500px">5</div>
+	<div class="box" style="height:350px">6</div>
+	<div class="box" style="height:380px">7</div>
+	<div class="box" style="height:480px">8</div>
+	<div class="box" style="height:332px">9</div>
+	<div class="box" style="height:420px">10</div>
+	<div class="box" style="height:320px">11</div>
+	<div class="box" style="height:420px">12</div>
+	<div class="box" style="height:380px">13</div>
+</div>
+
+```
+
+### CSS
+
+#### 
+.mason {} /* container class */
+.mason .col{} /* item class */
+
+No basic CSS class definition. It's already provide on plugin.
