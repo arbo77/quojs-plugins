@@ -37,6 +37,7 @@
 			number: 4,
 			height: [0,0,0,0],
 		},
+		is_redraw: false,
 		
 		init: function(element, options){
 			/**
@@ -63,7 +64,9 @@
 			this.column.number = Math.floor(this.element.width()/this.options.itemWidth)
 			this.element[0].style["width"] = (this.column.number * this.options.itemWidth)+"px";
 			var colWidth = this.options.itemWidth - this.options.gap;
-			$$("head").append("<style>\n.mason{margin: 0 auto}\n.mason .col{float:left;width:"+colWidth+"px;margin:0 "+(this.options.gap/2)+"px;}\n</style>")
+			if(!this.is_redraw){
+				$$("head").append("<style>\n.mason{margin: 0 auto}\n.mason .col{float:left;width:"+colWidth+"px;margin:0 "+(this.options.gap/2)+"px;}\n</style>")
+			}
 			for(i=0;i<this.column.number;i++){
 				this.column.height[i] = 0;
 				this.element.append("<div class='col' style=''></div>");
@@ -84,6 +87,7 @@
 		},
 		
 		redraw: function(){
+			this.is_redraw = true;
 			this.draw_item();
 		},
 		
