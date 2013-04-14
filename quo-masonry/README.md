@@ -19,5 +19,8 @@ Changelog
 - Adding masonry.append method into quo-masonry plugin
 - Adding masonry.prepend method into quo-masonry plugin
 
-2013/04/20
+2013/04/14
 - Change add_item method, place next item into the shortest column.
+- Adding fluid placement
+- Adding inline css to define .mason and .mason .col classes
+- Redrawing capability when resizing window 

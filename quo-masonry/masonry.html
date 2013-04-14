@@ -21,37 +21,30 @@ body{
 	margin-bottom: 10px;
 }
 
-.mason{
-	width: 960px;
-	margin: 0 auto;
-}
-
-.mason .col{
-	float: left;
-	margin: 0 5px;
-	width: 230px;
-}
 </style>
 	<script src="quo.masonry.js"></script>
 	<script>
 	$$().ready(function(){
-		$$("#container").masonry();
+		$$("#container").masonry({cols:'auto', itemWidth: 240});
 		
 		$$("#append").on("click",function(){
-			$$("#container").masonry.append($$('<div class="box" style="height:320px">14</div>'));
+			$$("#container").masonry.append($$('<div class="box" style="height:320px">Append</div>'));
 		})
 		
 		$$("#prepend").on("click",function(){
-			$$("#container").masonry.prepend($$('<div class="box" style="height:260px">0</div>'));
+			$$("#container").masonry.prepend($$('<div class="box" style="height:260px">Prepend</div>'));
 		})
 	})
 	</script>
 </head>
 <body>
+	<div style="width:98%;margin:0 auto;">
+	
 	<div>
 		<a href="#append" id='append'>Append</a>
 		<a href="#prepend" id='prepend'>Prepend</a>
 	</div>
+	
 	<div id="container" class="cols">
 		<div class="box" style="height:320px">1</div>
 		<div class="box" style="height:400px">2</div>
@@ -66,6 +59,8 @@ body{
 		<div class="box" style="height:320px">11</div>
 		<div class="box" style="height:420px">12</div>
 		<div class="box" style="height:380px">13</div>
+	</div>
+	<div style="clear:both"></div>
 	</div>
 </body>
 </html>
