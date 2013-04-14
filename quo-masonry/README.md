@@ -30,14 +30,12 @@ Dynamic masonry layout design using QuoJS a Micro Javascript Library.
 ### Javascript
 
 ```js
-<script>
 
 $$("#container").masonry({
 	cols:'auto', 
 	itemWidth: 240
 });
 
-</script>
 ```
 
 ### HTML
@@ -82,8 +80,17 @@ $$("#container").masonry({
 
 ### CSS
 
-#### 
-.mason {} /* container class */
-.mason .col{} /* item class */
-
 No basic CSS class definition. It's already provide on plugin.
+
+#### Container class
+
+.mason {}
+
+#### Item Class
+
+.mason .col{}
+
+
+## Example
+
+Live example as seen on [http://arbo77.com/quojs/masonry.html](http://arbo77.com/quojs/masonry.html)
