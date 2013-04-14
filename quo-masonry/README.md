@@ -30,16 +30,12 @@ Dynamic masonry layout design using QuoJS a Micro Javascript Library.
 ### Javascript
 
 ```js
-<script src="quo.js"></script>
-<script src="quo.masonry.js"></script>
 <script>
 
-$$().ready(function(){
-	$$("#container").masonry({
-		cols:'auto', 
-		itemWidth: 240
-	});
-}
+$$("#container").masonry({
+	cols:'auto', 
+	itemWidth: 240
+});
 
 </script>
 ```
@@ -47,22 +43,40 @@ $$().ready(function(){
 ### HTML
 
 ```html
+<head>
+	...
+	...
+	<script src="quo.js"></script>
+	<script src="quo.masonry.js"></script>
+	<script>
 
-<div id="container" class="cols">
-	<div class="box" style="height:320px">1</div>
-	<div class="box" style="height:400px">2</div>
-	<div class="box" style="height:280px">3</div>
-	<div class="box" style="height:420px">4</div>
-	<div class="box" style="height:500px">5</div>
-	<div class="box" style="height:350px">6</div>
-	<div class="box" style="height:380px">7</div>
-	<div class="box" style="height:480px">8</div>
-	<div class="box" style="height:332px">9</div>
-	<div class="box" style="height:420px">10</div>
-	<div class="box" style="height:320px">11</div>
-	<div class="box" style="height:420px">12</div>
-	<div class="box" style="height:380px">13</div>
-</div>
+	$$().ready(function(){
+		$$("#container").masonry({
+			cols:'auto', 
+			itemWidth: 240
+		});
+	}
+	</script>
+</head>
+<body>
+	...
+	<div id="container" class="cols">
+		<div class="box" style="height:320px">1</div>
+		<div class="box" style="height:400px">2</div>
+		<div class="box" style="height:280px">3</div>
+		<div class="box" style="height:420px">4</div>
+		<div class="box" style="height:500px">5</div>
+		<div class="box" style="height:350px">6</div>
+		<div class="box" style="height:380px">7</div>
+		<div class="box" style="height:480px">8</div>
+		<div class="box" style="height:332px">9</div>
+		<div class="box" style="height:420px">10</div>
+		<div class="box" style="height:320px">11</div>
+		<div class="box" style="height:420px">12</div>
+		<div class="box" style="height:380px">13</div>
+	</div>
+	...
+</body>
 
 ```
 
