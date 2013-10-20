@@ -93,4 +93,4 @@ No basic CSS class definition. It's already provide on plugin.
 
 ## Example
 
-Live example as seen on [http://arbo77.com/quojs/masonry.html](http://arbo77.com/quojs/masonry.html)
+
